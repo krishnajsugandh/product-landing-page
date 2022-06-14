@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tribute page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+}
+
+/*---------------NAVBAR-------------*/
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+nav img {
+  float: left;
+  width: 4em;
+  height: 100%;
+  display: flex;
+}
+
+nav {
+  padding: 20px 25px;
+  background-image: url('https://i.ibb.co/4mX6gTy/b9.jpg');
+  background-size: cover;
+  repeat: no-repeat;
+   background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: "Century Gothic";
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-left: 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Verdana;
+  font-size: 12px;
+  color: #fff;
+}
+
+#hamburger-toggle {
+  display: none;
+}
+
+.hamburger {
+  width: 30px;
+  height: 30px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+}
+
+.hamburger .bar {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.hamburger .bar::before,
+.hamburger .bar::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.hamburger .bar::before {
+  transform: translateY(-10px);
+}
+
+.hamburger .bar::after {
+  transform: translateY(10px);
+}
+/*-------------------------NAVBAR END-------------*/
+/*-----INTRO STARTS--------*/
+#intro {
+  background-image: url('https://i.ibb.co/BfZbjLP/k1.jpg');
+  background-size: cover;
+  repeat: no-repeat;
+   background-attachment: fixed;
+  background-position: center;
+  color: white;
+  
+  #video {
+   box-shadow: 15px 10px 10px;
+    max-width: 100%;
+    height: auto;
+    border: 15px solid rgba(0, 0, 0, 0.5);
+}
+}
+/*-----INTRO ENDS-----*/
+#a-diamond1 {
+  background-image: url('https://i.ibb.co/R9r2M2B/d2.jpg');
+   background-size: cover;
+  repeat: no-repeat;
+   background-attachment: fixed;
+  background-position: center;
+   width: 100%;
+  height: 100vh;
+  box-shadow: 15px 10px 10px;
+}
+
+/*-----DIAMOND ENCYCLOPEDIA-----*/
+#diamond-encyclopedia {
+  background-image: url('https://i.ibb.co/ssr4ZkL/k2.jpg');
+  background-size: cover;
+  repeat: no-repeat;
+   background-attachment: fixed;
+  background-position: center;
+  box-shadow: 15px 10px 10px;
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.container .card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.container .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+#diamond-encyclopedia img {
+  width: 60vw;
+  height: auto;
+   box-shadow: 15px 10px 10px ;
+}
+
+#diamond-encyclopedia #diamond-encyclopedia-heading, #diamond-heading {
+  color: white;
+}
+/*---------DIAMOND ENCYCLOPEDIA ENDS------*/
+
+/*-----ANALYSIS AND GRADING*/
+.about-wrapper{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+ .about-card{
+    max-width: 300px;
+     min-height: 250px;
+     padding: 30px;
+     box-sizing: border-box;
+     box-shadow: 15px 10px 10px;
+     margin:20px;    
+}
+
+ .about-card-title{
+     margin-top: 0;
+     font-size: 16px;
+     font-weight: 600;
+     letter-spacing: 1.2px;
+}
+ .about-card-content{
+     font-size: 14px;
+     letter-spacing: 0.5px;
+     line-height: 1.5;
+}
+
+/*-----ANALYSIS AND GRADING ENDS--------*/
+
+
+/*------ABOUT US STARTS------*/
+#about-us {
+background-image: url('https://i.ibb.co/YyccXYn/b8.jpg');
+  background-size: cover;
+  repeat: no-repeat;
+   background-attachment: fixed;
+  background-position: center;
+  box-shadow: 15px 10px 10px;
+  color: white;
+}
+
+.about-us-container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.about-us-container .about-us-card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.about-us-container .about-us-card .about-us-content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.about-us-container .about-us-card:hover .about-us-content {
+	transform: translateY(-20px);
+}
+
+.about-us-container .about-us-card .about-us-content .about-us-imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.about-us-container .about-us-card .about-us-content .about-us-imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about-us-container .about-us-card .about-us-content .about-us-contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+/*-----ABOUT US ENDS-----*/
+
+
+/*-----DIAMOND GALLERY-----*/
+.img-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  width: 300px;
+  height: auto;
+  margin: 0 20px 20px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  transition: all 0.5s;
+  background-size: cover;
+  background-position: center;
+   background-attachment: fixed;
+    box-shadow: 15px 10px 10px;
+}
+
+.grid-item:hover {
+  outline: 10px solid white;
+  outline-offset: 10px;
+}
+
+.grid-item:hover img {
+  transform: scale(1.2);
+}
+/*-----DIAMOND GALLERY ENDS-----*/
+
+/*-----SUBSCRIBE-----*/
+.subscribe-container {
+    margin: 150px auto;
+    width: 55vw;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    padding: 10px;
+    border-radius: .5em;
+    overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.subscribe-container .subscribe-img {
+    flex-basis: 40%;
+    display: grid;
+    place-items: center;
+}
+
+.subscribe-container .subscribe-img img {
+    width: 100%;
+    height: auto;
+}
+
+.subscribe-container .subscribe-body_txt {
+    flex-basis: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.subscribe-body_txt h1{
+    font-size:2vw;
+    line-height: 3vw;
+}
+.subscribe-body_txt p {
+    margin: 18px 0;
+}
+.subscribe-inps input[type="email"] {
+    background: rgb(251 251 251);
+    border: 2px solid rgb(150, 150, 150);
+    outline: none;
+    width: 80%;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    height: 24px;
+    border-radius: .2rem;
+    transition: .12s;
+
+}
+.subscribe-inps input[type="email"]:focus {
+    border: 2px solid #ff0037;
+}
+.subscribe-inps .button {
+    width: 85%;
+    height: 39px;
+    padding: 6px;
+    margin-top: 15px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    outline: 0;
+    font-family: roboto;
+    font-size: 15px;
+    border-radius: .4em;
+    cursor: pointer;
+    transition: .2s all;
+    user-select: none;
+}
+
+.subscribe-inps .button:hover {
+    background: #ffffff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.subscribe-inps .button:active {
+    background: #ff0037;
+    color: #fff;
+    border: 2px solid #ff0037;
+}
+
+
+@media (max-width: 600px) {
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.ibb.co/4mX6gTy/b9.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  .nav-list li a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 20px;
+    transition: all 0.3s;
+  }
+
+  .nav-list li a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    border-radius: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 999;
+  }
+
+  #hamburger-toggle:checked ~ .nav-list {
+    transform: none;
+  }
+
+  #hamburger-toggle:checked ~ .hamburger .bar::before {
+    transform: rotate(45deg);
+  }
+
+  #hamburger-toggle:checked ~ .hamburger .bar {
+    background-color: transparent;
+  }
+
+  #hamburger-toggle:checked ~ .hamburger .bar::after {
+    transform: rotate(-45deg);
+  }
+  
+  
+  
+  #intro {
+    background-attachment: scroll;
+  }
+  
+  nav {
+    background-attachment: scroll;
+  }
+  
+  #a-diamond {
+    background-attachment: scroll;
+  }
+  
+  #diamond-encyclopedia {
+    background-attachment: scroll;
+  }
+  
+  #about-us {
+    background-attachment: scroll;
+  }
+}
+  
+  /*-----SUBSCRIBE-----*/
+@media screen and (max-width: 870px){
+  .subscribe-container {
+    width: 80vw;
+    height: auto;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    display: block;
+}
+  
+  .subscribe-container .subscribe-img {
+    height: 150px;
+    background: url('https://i.ibb.co/w0vP3F9/g11.jpg');
+    object-fit: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .subscribe-container .subscribe-img img{
+    display: none;
+  }
+  .subscribe-container .subscribe-body_txt h1{
+
+    font-size: 1.5em;
+    line-height: 25px;
+    margin: 5px 0;
+  }
+  .subscribe-container .subscribe-inps .button{
+    width: 88%;
+  }
+}
+}
+</style>
+    </head>
+
+    <body>
+        <header id='header'>
+<nav id='nav-bar'>
+  <img src="https://i.ibb.co/5vzkSfF/gem-2.png" alt="gem-2" border="0" id='header-img'>
+
+  <input type="checkbox" id="hamburger-toggle">
+  <label for="hamburger-toggle" class="hamburger">
+    <span class="bar"></span>
+  </label>
+
+  <ul class="nav-list">
+    <li><a href="#diamond-encyclopedia" class='nav-link'>diamond encyclopedia</a></li>
+    <li><a href="#analysis&grading" class='nav-link'>analysis & grading</a></li>
+    <li><a href="#about-us" class='nav-link'>about</a></li>
+    <li><a href="#diamond-gallery" class='nav-link'>diamond gallery</a></li>
+  </ul>
+</nav>
+</header>
+<!--NAVBAR CLOSE-->
+
+<!--INFO STARTS-->
+<br> <br> <br> <br> <br><br> <br> <br> <br>
+<div id='intro'>
+ <center> <h1>UNIVERSAL GEMS</h1>
+  <br> <br>
+  <p>Established in 1931, Universal Gems is the world’s foremost authority on diamonds. A public benefit, nonprofit institute, Universal Gems is the leading source of knowledge, standards, and education in gems and jewelry.</p> <br> <br>
+  <p>From online retailer to established international brand, our story has been inspired by our team’s shared passion for creating jewellery of the finest quality, providing impeccable customer care and crafting heartfelt stories into timeless reality.</p> <br> <br>
+  <p>In an expanding world of retail outlets and faceless websites, we offer finely crafted diamond jewellery that is great value for money while maintaining a quality of product and service that is second to none.</p> <br> <br>
+  <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/wOKrtXwU3Co" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+  </center>
+</div> <br> <br> <br>
+<!--INFO ENDS-->
+
+<!--DIAMOND IMAGE-->
+<div id='a-diamond1'> </div> <br> <br> <br> <br>
+<!--DIAMOND IMAGE ENDS-->
+
+
+<!--DIAMOND ENCYCLOPEDIA SECTION-->
+<section id='diamond-encyclopedia'> <br> <br> <br> <br> <br> <br>
+  <center> <h1 id='diamond-heading'>DIAMOND ENCYCLOPEDIA</h1> </center>
+  <div class="container">
+			<div class="card">
+				<div class="content">
+          <h1>58X HARDER</h1>
+					<div class="contentBx">
+						<h3>Diamonds are the hardest material on earth: 58 times harder than anything else in nature.</h3>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+          <h1>“LUCY” IN THE SKY</h1>
+					<div class="contentBx">
+						<h3>Fifty light years from earth, this star is a 10 billion-trillion-trillion carat diamond.</h3>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+          <h1>1 IN 1,000,000</h1>
+					<div class="contentBx">
+						<h3>The average yield in most diamond mines is 1 part diamond to 1 million parts host rock.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+  <center>
+  <img src="https://i.ibb.co/rmfd446/d4.webp" alt="d4" border="0"> <br> <br>
+    <div id='diamond-encyclopedia-heading'>
+    <h1>QUALITY FACTORS</h1> <br>
+    <h3>The human contribution to a diamond’s beauty is a well-executed cut.</h3>
+    </div>
+  </center>
+  
+  <div class="container">
+			<div class="card">
+				<div class="content">
+          <h1>CLARITY</h1>
+					<div class="contentBx">
+            <h3>Clarity grades assess the number, size, relief, and position of inclusions and blemishes.</h3>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+          <h1>COLOR</h1>
+					<div class="contentBx">
+            <h3>The less color, the higher the grade. Even the slightest hint can make a dramatic difference in value.</h3>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+          <h1>CUT</h1>
+					<div class="contentBx">
+						<h3>Cut (proportions, symmetry, and polish) is a measure of how a diamond’s facets interact with light.</h3>
+					</div>
+				</div>
+				</div>
+      <div class="card">
+				<div class="content">
+          <h1>CARAT WEIGHT</h1>
+					<div class="contentBx">
+            <h3>Rarity means larger diamonds of the same quality are worth more per carat.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+<!--DIAMOND ENCYCLOPEDIA ENDS-->
+
+<!--ANALYSIS AND GRADING-->
+<section id='analysis&grading'> <br> <br> <br> <br> <br> <br>
+  <center> <h1>ANALYSIS & GRADING</h1> </center>
+<div class="about-wrapper">
+<div class="about-card">
+	<h3 class="about-card-title"> PRECISION</h3>
+		<p class="about-card-content"> Advanced instrumentation and experienced visual observations deliver consistently accurate results.</p>
+
+	</div>
+	<div class="about-card">
+		<h3 class="about-card-title"> EXPERTISE</h3>
+		<p class="about-card-content"> Universal Gems laboratories are staffed by expert scientists and gemologists working with state-of-the-art technology.</p>
+		
+	</div>
+  
+	<div class="about-card">
+		<h3 class="about-card-title"> INTEGRITY</h3>
+		<p class="about-card-content">  As a non-profit organization, Universal Gems operates independently of commercial and private interests, political lobbies and advocacy groups. </p>
+	</div>
+  
+  <div class="about-card">
+		<h3 class="about-card-title"> OBJECTIVITY</h3>
+		<p class="about-card-content"> All gemstones are analyzed under complete client anonymity to ensure objective analysis.</p>
+</div>
+  
+ 
+  <div class="about-card">
+		<h3 class="about-card-title"> GLOBAL STANDARD</h3>
+		<p class="about-card-content"> Universal Gems reports are the benchmark of analysis and grading, and those who buy, sell or curate the world’s most important gems rely on GIA. </p>
+</div>
+</div>
+</section>
+<!--ANALYSIS AND GRADING ENDS-->
+
+<!--ABOUT-->
+<section id='about-us'> <br> <br> <br> <br> <br> 
+  <center>
+  <h1>ABOUT US</h1> <br> <br>
+  <h1>A TRADITION OF SCIENCE AND EDUCATION</h1> <br> <br>
+  </center>
+  <h3>Innovators at heart.</h3> <br>
+  <p>From online retailer to established international brand, our story has been inspired by our team’s shared passion for creating jewellery of the finest quality, providing impeccable customer care and crafting heartfelt stories into timeless reality.</p> <br> <br>
+  
+  <h3>Quality designs, curated collections.</h3> <br>
+  <p>Since beginning our journey, we have constantly sought inspiration from our customers. Our tailored bespoke service has played a central role in shaping our identity and allowed countless ideas to come to life, producing personalised jewels that have since become priceless family heirlooms.</p> <br>
+  <p>Some of our most prized engagement ring designs, such as Delicacy and Delicacy Vintage, were born out of our customers’ creative requests. This inspiration gave us the insight to design our own timeless collections. One of our very first, Glissade, harnessed the graceful movement of ballet to reflect the balance and artistry of our own craft.</p> <br>
+  <p>Today, these collections allow customers to see through the bewildering volume of jewellery available on the internet. We are able to present exquisite designs in an easy and accessible way, uniting our creativity with your personal desires.</p> <br> <br> <br>
+  
+  
+  <center> <h1>THE 4CS</h1> </center>
+  <div class="about-us-container">
+			<div class="about-us-card">
+				<div class="about-us-content">
+					<div class="about-us-imgBx">
+						<img src="https://i.ibb.co/W3HtTxH/gia1.jpg" alt="gia1" border="0">
+					</div>
+          <h1>CUT</h1>
+					<div class="about-us-contentBx">
+						<h3>The sparkle and brilliance of a diamond depends more on its cut than anything else.</h3>
+					</div>
+				</div>
+			</div>
+      
+			<div class="about-us-card">
+				<div class="about-us-content">
+					<div class="about-us-imgBx">
+						<img src="https://i.ibb.co/k9yS088/gia2.jpg" alt="gia2" border="0">
+					</div>
+          <h1>CLARITY</h1>
+					<div class="about-us-contentBx">
+						<h3>The absence of inclusions and blemishes makes a diamond rare and affects value.</h3>
+					</div>
+				</div>
+			</div>
+      
+			<div class="about-us-card">
+				<div class="about-us-content">
+					<div class="about-us-imgBx">
+						<img src="https://i.ibb.co/QHfjwDC/gia3.jpg" alt="gia3" border="0">
+					</div>
+          <h1>COLOR</h1>
+					<div class="about-us-contentBx">
+						<h3>Diamonds in the D-to-Z color range are valued by how closely they approach colorlessness – the less color, the higher their value.</h3>
+					</div>
+				</div>
+			</div>
+      
+      <div class="about-us-card">
+				<div class="about-us-content">
+					<div class="about-us-imgBx">
+						<img src="https://i.ibb.co/zSxYRF3/gia4.jpg" alt="gia4" border="0">
+					</div>
+          <h1>CARAT WEIGHT</h1>
+					<div class="about-us-contentBx">
+						<h3>Diamonds and gemstones are weighed in metric carats: one carat is equal to 0.2 grams, about the weight of a paperclip.</h3>
+					</div>
+				</div>
+			</div> 
+		</div>
+</section>
+<!--ABOUT US ENDS-->
+
+
+<!--DIAMOND GALLERY-->
+<section id='diamond-gallery'> <br> <br> <br> <br> <br> <br>
+  <div class='gallery'>
+    <center> <h1>DIAMOND GALLERY</h1> </center> <br> <br>
+    
+<div class='img-grid'>
+ <div class='grid-item'>
+   <img src='https://i.ibb.co/KFp0nsM/g1.jpg' alt='Round Diamond'>
+    </div>
+
+                                    <div class='grid-item'>
+                                        <img src='https://i.ibb.co/KDz1hQm/g2.jpg' alt='Diamond'>
+                                        </div>
+
+                                        <div class='grid-item'>
+                                        <img src='https://i.ibb.co/qxL71Sj/g3.jpg' alt='Diamond'>
+                                        </div>
+
+                                        <div class='grid-item'>
+                                        <img src='https://i.ibb.co/WtYc1HX/g4.jpg' alt='Diamond'>
+                                        </div>
+
+                                        <div class='grid-item'>
+                                        <img src='https://i.ibb.co/sHXmWfd/g5.jpg' alt='Diamond'>
+                                        </div>
+
+                                        <div class='grid-item'>
+                                        <img src='https://i.ibb.co/C5VcN2G/g6.jpg' alt='Diamond'>
+                                        </div>
+
+                                        <div class='grid-item'>
+                                        <img src='https://i.ibb.co/p3FZ0t5/g7.jpg' alt='Diamond'>
+                                        </div>
+
+                                        <div class='grid-item'>
+                                        <img src='https://i.ibb.co/kgWnRrh/g8.jpg' alt='Diamond'>
+                                        </div>
+
+                                        <div class='grid-item'>
+                                        <img src='https://i.ibb.co/mSmDn05/g9.jpg' alt='Diamond'>
+                                        </div>
+
+                                        <div class='grid-item'>
+                                        <img src='https://i.ibb.co/NFfTFjH/g10.jpg' alt='Diamond'>
+                                        </div>
+
+                                        <div class='grid-item'>
+                                        <img src='https://i.ibb.co/w0vP3F9/g11.jpg' alt='Diamond'>
+                                        </div>
+
+                                        <div class='grid-item'>
+                                        <img src='https://i.ibb.co/CMftqfw/g12.jpg' alt='Diamond'>
+                                        </div>
+
+                            </div>
+</section>
+  <!--DIAMOND GALLERY ENDS-->
+  
+  
+  <!--SUBSCRIBE-->
+  <form action="https://www.freecodecamp.com/email-submit" id='form'>
+  <div class="subscribe-container">
+        <div class="subscribe-img">
+            <img src="https://i.ibb.co/w0vP3F9/g11.jpg" alt="diamond" width="380">
+        </div>
+        <div class="subscribe-body_txt">
+            <h1>Let’s Keep In <br> touch!</h1>
+            <p>Join our community of jewellery lovers, and receive once a week special offers, news and product launches straight to your inbox.</p>
+            <div class="subscribe-inps">
+                <input type="email" name="email" id="email" placeholder="Enter e-mail" required><br>
+                <input type='submit' id='submit' class='button'>
+            </div>
+        </div>
+    </div>
+    </form>
+       </body>
+      </html>
+
